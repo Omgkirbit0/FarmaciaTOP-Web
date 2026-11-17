@@ -86,7 +86,7 @@ header{position:sticky;top:0;background:rgba(255,255,255,.96);backdrop-filter:bl
 .hero-datos strong{display:block;line-height:1.2}
 .hero-datos small{color:var(--suave)}
 .foto{position:relative}
-.foto img{border-radius:24px;aspect-ratio:4/5;object-fit:cover;object-position:center 30%;width:100%;box-shadow:0 24px 60px rgba(29,42,143,.18)}
+.foto img{border-radius:24px;width:100%;height:auto;aspect-ratio:900/948;max-height:calc(100vh - 190px);object-fit:cover;object-position:center top;box-shadow:0 24px 60px rgba(29,42,143,.18)}
 .foto .chip{position:absolute;left:-18px;bottom:28px;background:#fff;border-radius:16px;padding:14px 18px;box-shadow:0 12px 30px rgba(0,0,0,.12);display:flex;gap:12px;align-items:center;max-width:280px}
 .foto .chip b{display:block}
 .foto .chip small{color:var(--suave)}
@@ -131,6 +131,13 @@ section{padding:80px 0}
 .pasos b{background:#fff;color:var(--rojo);width:30px;height:30px;border-radius:50%;display:grid;place-items:center;flex-shrink:0}
 
 /* Novedades */
+.remodelando{position:relative;border-radius:20px;padding:10px;margin-bottom:28px;background:repeating-linear-gradient(-45deg,#f5c400 0 22px,#1a1c2b 22px 44px)}
+.remodelando>div{background:#fff;border-radius:12px;padding:28px 30px;display:flex;gap:22px;align-items:center}
+.remodelando .ic{font-size:3rem;line-height:1;flex-shrink:0}
+.remodelando h3{font-size:clamp(1.4rem,3vw,1.9rem);line-height:1.2;margin-bottom:6px}
+.remodelando h3 span{color:var(--rojo)}
+.remodelando p{color:var(--suave)}
+@media (max-width:600px){.remodelando>div{flex-direction:column;text-align:center;padding:24px 18px}}
 .fecha{display:inline-block;background:var(--azul-claro);color:var(--azul);font-weight:700;font-size:.8rem;padding:4px 10px;border-radius:999px;margin-bottom:12px}
 
 /* Visítanos */
@@ -237,7 +244,7 @@ footer a:hover{color:#fff}
       </div>
     </div>
     <div class="foto">
-      <img src="img/fachada.jpg" alt="Fachada de Farmacia TOP en la Calle 9 #84A-08, Belén" width="900" height="1415">
+      <img src="img/fachada.jpg" alt="Fachada de Farmacia TOP en la Calle 9 #84A-08, Belén" width="900" height="948">
       <a class="chip" href="#visitanos"><span style="font-size:1.6rem">📍</span><div><b>Cl. 9 #84A-08</b><small>Belén, Medellín</small></div></a>
     </div>
   </div>
@@ -304,6 +311,15 @@ footer a:hover{color:#fff}
       <p>Entérate de lo que pasa en la farmacia sin salir de casa.</p>
     </div>
     <!-- Para agregar una novedad, copia un bloque <div class="tarjeta">…</div> y cambia el texto -->
+    <div class="remodelando" role="note">
+      <div>
+        <span class="ic" aria-hidden="true">🚧</span>
+        <div>
+          <h3>¡Estamos <span>remodelando</span>!</h3>
+          <p>Estamos renovando Farmacia TOP para atenderte mejor. Muy pronto verás los cambios. ¡Gracias por tu paciencia!</p>
+        </div>
+      </div>
+    </div>
     <div class="grid g3">
       <div class="tarjeta"><span class="fecha">18/3/26 · Producto nuevo</span><h3>Bolitas de colores</h3><p>Sabrosas y deliciosas, ¡ahora en Farmacia TOP! A solo $500 c/u.</p></div>
       <div class="tarjeta"><span class="fecha">7/3/26 · Precios</span><h3>Precios más accesibles</h3><p>Reajustamos algunos precios para que sean más accesibles para todos.</p></div>
