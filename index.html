@@ -33,7 +33,7 @@
     {"@type": "OpeningHoursSpecification","dayOfWeek": "Saturday","opens": "08:00","closes": "20:00"},
     {"@type": "OpeningHoursSpecification","dayOfWeek": "Sunday","opens": "08:00","closes": "19:00"}
   ],
-  "sameAs": ["https://www.instagram.com/farmaciatop/","https://www.facebook.com/FarmaciaTOP5/"]
+  "sameAs": ["https://www.instagram.com/farmaciatop/","https://www.facebook.com/FarmaciaTOP5/","https://www.youtube.com/@farmaciatop5","https://www.tiktok.com/@farmacia.top"]
 }
 </script>
 <style>
@@ -138,6 +138,24 @@ section{padding:80px 0}
 .remodelando h3 span{color:var(--rojo)}
 .remodelando p{color:var(--suave)}
 @media (max-width:600px){.remodelando>div{flex-direction:column;text-align:center;padding:24px 18px}}
+/* Infórmate */
+.informate{display:grid;grid-template-columns:1fr 340px;gap:48px;align-items:center}
+.informate h2{font-size:clamp(1.9rem,4vw,2.7rem);line-height:1.15;margin:8px 0 14px}
+.informate h2 em{font-style:normal;color:var(--rojo)}
+.informate>div>p{color:var(--suave);font-size:1.1rem;margin-bottom:26px;max-width:520px}
+.informate small.k{color:var(--rojo);font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.redes{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:520px}
+.red{display:flex;align-items:center;gap:12px;padding:14px 16px;border-radius:14px;color:#fff;font-weight:700;transition:.2s}
+.red:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(0,0,0,.15)}
+.red svg{width:26px;height:26px;flex-shrink:0}
+.red small{display:block;font-weight:500;opacity:.85;font-size:.8rem}
+.red.fb{background:#1877f2}.red.ig{background:linear-gradient(45deg,#f9a825,#e1306c 50%,#833ab4)}.red.yt{background:#ff0000}.red.tt{background:#111}
+.reel{background:#fff;border:1px solid var(--borde);border-radius:22px;padding:10px;box-shadow:0 20px 50px rgba(29,42,143,.12)}
+.reel .marco{border-radius:14px;overflow:hidden;background:#000;aspect-ratio:9/16}
+.reel iframe{width:100%;height:100%;border:0;display:block}
+.reel a{display:block;text-align:center;font-weight:700;color:#1877f2;padding:10px 0 4px;font-size:.92rem}
+@media (max-width:900px){.informate{grid-template-columns:1fr;gap:32px}.reel{max-width:340px;width:100%;margin:0 auto}}
+@media (max-width:420px){.redes{grid-template-columns:1fr}}
 .fecha{display:inline-block;background:var(--azul-claro);color:var(--azul);font-weight:700;font-size:.8rem;padding:4px 10px;border-radius:999px;margin-bottom:12px}
 
 /* Visítanos */
@@ -218,6 +236,7 @@ footer a:hover{color:#fff}
       <a href="#inyectologia">Inyectología</a>
       <a href="#pedidos">Domicilios</a>
       <a href="#novedades">Novedades</a>
+      <a href="#informate">Infórmate</a>
       <a href="#visitanos">Ubicación</a>
     </nav>
     <a class="btn btn-wa" href="https://wa.me/573023835590" data-wa>WhatsApp</a>
@@ -328,6 +347,28 @@ footer a:hover{color:#fff}
   </div>
 </section>
 
+<section id="informate">
+  <div class="contenedor informate">
+    <div>
+      <small class="k">Videos informativos</small>
+      <h2>¡<em>Infórmate</em>!</h2>
+      <p>Subimos videos informativos en nuestras redes sociales. ¡Síguenos para no perderte nada!</p>
+      <div class="redes">
+        <a class="red fb" href="https://www.facebook.com/FarmaciaTOP5/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg><span>Facebook<small>FarmaciaTOP5</small></span></a>
+        <a class="red ig" href="https://www.instagram.com/farmaciatop/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 3.9 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zm0 4.7a5.1 5.1 0 1 0 0 10.2 5.1 5.1 0 0 0 0-10.2zm0 8.4a3.3 3.3 0 1 1 0-6.6 3.3 3.3 0 0 1 0 6.6zm5.3-9.8a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></svg><span>Instagram<small>@farmaciatop</small></span></a>
+        <a class="red yt" href="https://www.youtube.com/@farmaciatop5" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg><span>YouTube<small>@farmaciatop5</small></span></a>
+        <a class="red tt" href="https://www.tiktok.com/@farmacia.top" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.6 6.7a4.8 4.8 0 0 1-3.8-4.2V2h-3.4v13.7a2.9 2.9 0 1 1-2-2.8V9.4a6.3 6.3 0 1 0 5.4 6.3V8.7a8.2 8.2 0 0 0 4.8 1.5V6.8l-1-.1z"/></svg><span>TikTok<small>@farmacia.top</small></span></a>
+      </div>
+    </div>
+    <div class="reel">
+      <!-- Último reel de Facebook. Para cambiarlo, reemplaza el número del reel (1141884288643722) en las dos líneas de abajo. -->
+      <div class="marco"><iframe id="reel" title="Último reel de Farmacia TOP en Facebook" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen
+        data-reel="https://www.facebook.com/reel/1141884288643722"></iframe></div>
+      <a href="https://www.facebook.com/reel/1141884288643722" target="_blank" rel="noopener">Ver en Facebook →</a>
+    </div>
+  </div>
+</section>
+
 <section id="visitanos">
   <div class="contenedor">
     <div class="titulo">
@@ -342,7 +383,7 @@ footer a:hover{color:#fff}
           <li><span class="icono">📍</span><div><strong>Dirección</strong><span>Cl. 9 #84A-08, Belén, Medellín, Antioquia</span></div></li>
           <li><span class="icono">💬</span><div><strong>WhatsApp y domicilios</strong><a href="https://wa.me/573023835590" data-wa>302 383 55 90</a></div></li>
           <li><span class="icono">📞</span><div><strong>Teléfono fijo</strong><a href="tel:+576043221090">(604) 322 10 90</a></div></li>
-          <li><span class="icono">📱</span><div><strong>Redes sociales</strong><a href="https://www.instagram.com/farmaciatop/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/FarmaciaTOP5/" target="_blank" rel="noopener">Facebook</a></div></li>
+          <li><span class="icono">📱</span><div><strong>Redes sociales</strong><a href="https://www.facebook.com/FarmaciaTOP5/" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/farmaciatop/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.youtube.com/@farmaciatop5" target="_blank" rel="noopener">YouTube</a> · <a href="https://www.tiktok.com/@farmacia.top" target="_blank" rel="noopener">TikTok</a></div></li>
         </ul>
       </div>
       <div class="mapa">
@@ -373,8 +414,8 @@ footer a:hover{color:#fff}
         <span class="logo-pie"><img src="img/logo.png" alt="Farmacia TOP"></span>
         <p>¡Estamos para servirle!<br>Cl. 9 #84A-08, Belén, Medellín<br>WhatsApp 302 383 55 90 · Fijo (604) 322 10 90</p>
       </div>
-      <div><h4>Sitio</h4><ul><li><a href="#categorias">Productos</a></li><li><a href="#inyectologia">Inyectología</a></li><li><a href="#pedidos">Domicilios</a></li><li><a href="#novedades">Novedades</a></li><li><a href="#visitanos">Ubicación</a></li></ul></div>
-      <div><h4>Síguenos</h4><ul><li><a href="https://www.instagram.com/farmaciatop/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.facebook.com/FarmaciaTOP5/" target="_blank" rel="noopener">Facebook</a></li></ul></div>
+      <div><h4>Sitio</h4><ul><li><a href="#categorias">Productos</a></li><li><a href="#inyectologia">Inyectología</a></li><li><a href="#pedidos">Domicilios</a></li><li><a href="#novedades">Novedades</a></li><li><a href="#informate">Infórmate</a></li><li><a href="#visitanos">Ubicación</a></li></ul></div>
+      <div><h4>Síguenos</h4><ul><li><a href="https://www.instagram.com/farmaciatop/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.facebook.com/FarmaciaTOP5/" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://www.youtube.com/@farmaciatop5" target="_blank" rel="noopener">YouTube</a></li><li><a href="https://www.tiktok.com/@farmacia.top" target="_blank" rel="noopener">TikTok</a></li></ul></div>
     </div>
     <div class="legal">© <span id="anio">2026</span> Farmacia TOP · Medellín, Colombia</div>
   </div>
@@ -399,6 +440,17 @@ const HORARIO = [
   ["Sábado","08:00","20:00"],
 ];
 // =========================
+
+// Carga el reel de Facebook al tamaño real del recuadro (cuando se acerca a la pantalla)
+const reel = document.getElementById("reel");
+const cargarReel = () => {
+  const w = Math.round(reel.parentElement.clientWidth), h = Math.round(w*16/9);
+  reel.src = "https://www.facebook.com/plugins/video.php?href="+encodeURIComponent(reel.dataset.reel)+"&show_text=false&width="+w+"&height="+h;
+};
+if ("IntersectionObserver" in window) {
+  const io = new IntersectionObserver(e=>{ if(e[0].isIntersecting){ cargarReel(); io.disconnect(); } },{rootMargin:"400px"});
+  io.observe(reel);
+} else cargarReel();
 
 const wa = msg => "https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent(msg);
 document.querySelectorAll("[data-wa]").forEach(a=>{ a.href = wa(MENSAJE); a.target="_blank"; a.rel="noopener"; });
