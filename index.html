@@ -107,7 +107,7 @@ section{padding:80px 0}
 .fondo-gris{background:var(--gris)}
 
 /* Categorías */
-.cats{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.cats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .cat{display:flex;flex-direction:column;text-align:center;align-items:center;padding:26px 18px}
 .cat:hover{border-color:var(--rojo)}
 .cat .icono{width:68px;height:68px;font-size:2rem;border-radius:50%}
@@ -215,7 +215,6 @@ footer a:hover{color:#fff}
   .nav .btn{display:none}
   .logo img{height:28px}
   .cats{grid-template-columns:1fr 1fr}
-  .cats .cat:last-child{grid-column:1/-1}
   .g3,.g4{grid-template-columns:1fr}
   .pie{grid-template-columns:1fr}
   section{padding:56px 0}
@@ -251,7 +250,7 @@ footer a:hover{color:#fff}
       <div class="lema"><span>¡Estamos para servirle!</span></div><br>
       <span class="estado" id="estado"><i></i><span>Horario: 8 a.m. todos los días</span></span>
       <h1>Tu farmacia de confianza en <em>Belén, Medellín</em></h1>
-      <p>Medicamentos, inyectología, aseo, productos para tu bebé y cosméticos. Pide por WhatsApp y te lo llevamos a domicilio.</p>
+      <p>Medicamentos, inyectología, aseo, productos para tu bebé, cosméticos y helados. Pide por WhatsApp y te lo llevamos a domicilio.</p>
       <div class="acciones">
         <a class="btn btn-wa" href="https://wa.me/573023835590" data-wa>💬 Pedir a domicilio</a>
         <a class="btn btn-sec" href="tel:+576043221090">📞 (604) 322 10 90</a>
@@ -277,11 +276,12 @@ footer a:hover{color:#fff}
       <p>Toca una categoría y pregúntanos por WhatsApp lo que buscas.</p>
     </div>
     <div class="cats">
-      <a class="tarjeta cat" href="#" data-wa-msg="Hola Farmacia TOP, quiero preguntar por un medicamento:"><div class="icono">💊</div><h3>Medicamentos</h3><p>Marcas confiables y genéricos, con o sin fórmula.</p><span class="pedir">Preguntar →</span></a>
+      <a class="tarjeta cat" href="#" data-wa-msg="Hola Farmacia TOP, quiero preguntar por un medicamento:"><div class="icono">💊</div><h3>Medicamentos</h3><p>Marcas confiables y genéricos, con fórmula.</p><span class="pedir">Preguntar →</span></a>
       <a class="tarjeta cat destacada" id="inyectologia" href="#" data-wa-msg="Hola Farmacia TOP, quiero información sobre el servicio de inyectología."><div class="icono">💉</div><h3>Inyectología</h3><p>Personal capacitado para aplicarte tus inyecciones en el punto.</p><span class="pedir">Más información →</span></a>
       <a class="tarjeta cat" href="#" data-wa-msg="Hola Farmacia TOP, busco productos de aseo e higiene:"><div class="icono">🧼</div><h3>Aseo e higiene</h3><p>Cuidado personal y del hogar para toda la familia.</p><span class="pedir">Preguntar →</span></a>
       <a class="tarjeta cat" href="#" data-wa-msg="Hola Farmacia TOP, busco productos para mi bebé:"><div class="icono">👶</div><h3>Todo para tu bebé</h3><p>Pañales, cremas, teteros y lo que tu bebé necesita.</p><span class="pedir">Preguntar →</span></a>
       <a class="tarjeta cat" href="#" data-wa-msg="Hola Farmacia TOP, busco cosméticos:"><div class="icono">💄</div><h3>Cosméticos</h3><p>Maquillaje y cuidado de la piel.</p><span class="pedir">Preguntar →</span></a>
+      <a class="tarjeta cat" href="#" data-wa-msg="Hola Farmacia TOP, ¿qué helados tienen disponibles?"><div class="icono">🍦</div><h3>Helados</h3><p>Vendemos variedad de helados de Crem Helado.</p><span class="pedir">Preguntar →</span></a>
     </div>
   </div>
 </section>
@@ -339,7 +339,8 @@ footer a:hover{color:#fff}
         </div>
       </div>
     </div>
-    <div class="grid g3">
+    <div class="grid g4">
+      <div class="tarjeta"><span class="fecha">17/11/26 · Sitio web</span><h3>Nuevo sitio web</h3><p>¡Nuestro sitio web ha sido remodelado y ahora es más bonito y funcional!</p></div>
       <div class="tarjeta"><span class="fecha">18/3/26 · Producto nuevo</span><h3>Bolitas de colores</h3><p>Sabrosas y deliciosas, ¡ahora en Farmacia TOP! A solo $500 c/u.</p></div>
       <div class="tarjeta"><span class="fecha">7/3/26 · Precios</span><h3>Precios más accesibles</h3><p>Reajustamos algunos precios para que sean más accesibles para todos.</p></div>
       <div class="tarjeta"><span class="fecha">1/2/26 · Producto nuevo</span><h3>Chao de sandía</h3><p>¡Ya llegaron a Farmacia TOP! A solo $2.000.</p></div>
