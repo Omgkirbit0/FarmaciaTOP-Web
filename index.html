@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Farmacia TOP · Droguería en Belén, Medellín</title>
+<meta name="description" content="Farmacia TOP en Belén, Medellín: medicamentos, inyectología, aseo e higiene, todo para tu bebé y cosméticos. Domicilios por WhatsApp al 302 383 55 90. ¡Estamos para servirle!">
+<meta property="og:title" content="Farmacia TOP · Belén, Medellín">
+<meta property="og:description" content="Medicamentos, inyectología y domicilios. WhatsApp 302 383 55 90.">
+<meta property="og:image" content="img/fachada.jpg">
+<meta property="og:locale" content="es_CO">
+<meta name="theme-color" content="#e3121b">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Pharmacy",
+  "name": "Farmacia TOP",
+  "slogan": "¡Estamos para servirle!",
+  "image": "img/fachada.jpg",
+  "telephone": "+57 604 322 1090",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Cl. 9 #84A-08",
+    "addressLocality": "Medellín",
+    "addressRegion": "Antioquia",
+    "addressCountry": "CO"
+  },
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification","dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens": "08:00","closes": "21:00"},
+    {"@type": "OpeningHoursSpecification","dayOfWeek": "Saturday","opens": "08:00","closes": "20:00"},
+    {"@type": "OpeningHoursSpecification","dayOfWeek": "Sunday","opens": "08:00","closes": "19:00"}
+  ],
+  "sameAs": ["https://www.instagram.com/farmaciatop/","https://www.facebook.com/FarmaciaTOP5/"]
+}
+</script>
+<style>
+:root{
+  --rojo:#e3121b; --rojo-osc:#b80d15; --rojo-claro:#fdecec;
+  --azul:#1d2a8f; --azul-osc:#141d66; --azul-claro:#eceefa;
+  --verde-wa:#25d366;
+  --texto:#1a1c2b; --suave:#5d6075; --fondo:#ffffff; --gris:#f6f6f9; --borde:#e6e7ef; --radio:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:"Plus Jakarta Sans",system-ui,sans-serif;color:var(--texto);background:var(--fondo);line-height:1.6}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.contenedor{width:min(1120px,100% - 32px);margin-inline:auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:999px;font-weight:700;transition:.2s;cursor:pointer;border:0;font-size:1rem}
+.btn-prim{background:var(--rojo);color:#fff}.btn-prim:hover{background:var(--rojo-osc)}
+.btn-sec{background:#fff;color:var(--azul);border:2px solid var(--azul)}.btn-sec:hover{background:var(--azul-claro)}
+.btn-wa{background:var(--verde-wa);color:#fff}.btn-wa:hover{filter:brightness(.95)}
+.btn-blanco{background:#fff;color:var(--rojo)}.btn-blanco:hover{background:var(--rojo-claro)}
+
+.aviso{background:var(--azul);color:#fff;font-size:.9rem;text-align:center;padding:8px 16px}
+.aviso a{font-weight:700;text-decoration:underline}
+
+header{position:sticky;top:0;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--borde);z-index:50}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.logo img{height:34px;width:auto}
+.menu{display:flex;gap:26px;font-weight:600;color:var(--suave)}
+.menu a:hover{color:var(--rojo)}
+.nav .btn{padding:10px 18px}
+.hamb{display:none;background:none;border:0;font-size:1.6rem;cursor:pointer;color:var(--texto)}
+
+.hero{background:linear-gradient(160deg,var(--rojo-claro),#fff 55%);padding:64px 0 72px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.lema{display:inline-block;background:var(--azul);color:#fff;font-weight:800;font-style:italic;font-size:.95rem;padding:6px 16px;border-radius:8px;transform:skewX(-8deg);margin-bottom:18px}
+.lema span{display:inline-block;transform:skewX(8deg)}
+.hero h1{font-size:clamp(2.1rem,5vw,3.3rem);line-height:1.1;font-weight:800;margin-bottom:18px}
+.hero h1 em{font-style:normal;color:var(--rojo)}
+.hero p{font-size:1.12rem;color:var(--suave);margin-bottom:26px;max-width:540px}
+.acciones{display:flex;gap:12px;flex-wrap:wrap}
+.estado{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:.9rem;padding:6px 14px;border-radius:999px;margin-bottom:18px;background:var(--gris);color:var(--suave)}
+.estado.abierto{background:#e3f7ec;color:#0b7a43}
+.estado.cerrado{background:var(--rojo-claro);color:var(--rojo-osc)}
+.estado i{width:9px;height:9px;border-radius:50%;background:currentColor}
+.estado.abierto i{animation:pulso 1.6s infinite}
+@keyframes pulso{50%{opacity:.3}}
+.hero-datos{display:flex;gap:28px;margin-top:34px;flex-wrap:wrap}
+.hero-datos div{display:flex;gap:10px;align-items:center}
+.hero-datos .ic{width:42px;height:42px;border-radius:12px;background:#fff;border:1px solid var(--borde);display:grid;place-items:center;font-size:1.2rem}
+.hero-datos strong{display:block;line-height:1.2}
+.hero-datos small{color:var(--suave)}
+.foto{position:relative}
+.foto img{border-radius:24px;aspect-ratio:4/5;object-fit:cover;object-position:center 30%;width:100%;box-shadow:0 24px 60px rgba(29,42,143,.18)}
+.foto .chip{position:absolute;left:-18px;bottom:28px;background:#fff;border-radius:16px;padding:14px 18px;box-shadow:0 12px 30px rgba(0,0,0,.12);display:flex;gap:12px;align-items:center;max-width:280px}
+.foto .chip b{display:block}
+.foto .chip small{color:var(--suave)}
+
+section{padding:80px 0}
+.titulo{text-align:center;max-width:660px;margin:0 auto 46px}
+.titulo small{color:var(--rojo);font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.titulo h2{font-size:clamp(1.7rem,3.5vw,2.4rem);line-height:1.2;margin:8px 0 12px}
+.titulo p{color:var(--suave)}
+.grid{display:grid;gap:20px}
+.g4{grid-template-columns:repeat(4,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.tarjeta{background:#fff;border:1px solid var(--borde);border-radius:var(--radio);padding:26px;transition:.2s}
+.tarjeta:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(0,0,0,.07)}
+.icono{width:54px;height:54px;border-radius:14px;background:var(--rojo-claro);display:grid;place-items:center;font-size:1.6rem;margin-bottom:16px}
+.tarjeta h3{font-size:1.1rem;margin-bottom:6px}
+.tarjeta p{color:var(--suave);font-size:.95rem}
+.fondo-gris{background:var(--gris)}
+
+/* Categorías */
+.cats{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.cat{display:flex;flex-direction:column;text-align:center;align-items:center;padding:26px 18px}
+.cat:hover{border-color:var(--rojo)}
+.cat .icono{width:68px;height:68px;font-size:2rem;border-radius:50%}
+.cat p{flex:1;margin-bottom:14px}
+.cat .pedir{font-weight:700;color:var(--rojo);font-size:.92rem}
+.cat.destacada{background:var(--azul);color:#fff;border-color:var(--azul)}
+.cat.destacada p{color:#d5d9f5}
+.cat.destacada .icono{background:rgba(255,255,255,.15)}
+.cat.destacada .pedir{color:#fff}
+
+.porque .icono{background:var(--azul-claro)}
+
+/* Pedido */
+.pedido{background:var(--rojo);color:#fff;border-radius:28px;padding:56px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;position:relative;overflow:hidden}
+.pedido::after{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;opacity:.08;background:#fff;clip-path:polygon(35% 0,65% 0,65% 35%,100% 35%,100% 65%,65% 65%,65% 100%,35% 100%,35% 65%,0 65%,0 35%,35% 35%)}
+.pedido h2{font-size:clamp(1.6rem,3.5vw,2.3rem);line-height:1.2;margin-bottom:14px}
+.pedido p{opacity:.92;margin-bottom:24px}
+.pedido .acciones{position:relative;z-index:1}
+.pasos{list-style:none;display:grid;gap:14px;position:relative;z-index:1}
+.pasos li{background:rgba(255,255,255,.14);border-radius:14px;padding:16px 18px;display:flex;gap:14px;align-items:flex-start}
+.pasos b{background:#fff;color:var(--rojo);width:30px;height:30px;border-radius:50%;display:grid;place-items:center;flex-shrink:0}
+
+/* Novedades */
+.fecha{display:inline-block;background:var(--azul-claro);color:var(--azul);font-weight:700;font-size:.8rem;padding:4px 10px;border-radius:999px;margin-bottom:12px}
+
+/* Visítanos */
+.visita{display:grid;grid-template-columns:1fr 1.2fr;gap:28px;align-items:stretch}
+.caja{background:#fff;border:1px solid var(--borde);border-radius:var(--radio);padding:28px}
+.caja h3{margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.horario-lista{list-style:none;margin-bottom:22px}
+.horario-lista li{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--borde);font-size:.97rem}
+.horario-lista li.hoy{font-weight:800;color:var(--rojo)}
+.datos-lista{list-style:none;display:grid;gap:16px}
+.datos-lista li{display:flex;gap:14px;align-items:flex-start}
+.datos-lista .icono{margin:0;width:42px;height:42px;font-size:1.15rem;flex-shrink:0}
+.datos-lista strong{display:block}
+.datos-lista small, .datos-lista span{color:var(--suave)}
+.datos-lista a{color:var(--azul);font-weight:700}
+.mapa{border-radius:var(--radio);overflow:hidden;border:1px solid var(--borde);min-height:420px;background:var(--gris);display:flex;flex-direction:column}
+.mapa iframe{width:100%;flex:1;min-height:360px;border:0}
+.mapa .btn{border-radius:0}
+
+details{background:#fff;border:1px solid var(--borde);border-radius:14px;padding:18px 22px;margin-bottom:12px}
+summary{font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--rojo);font-size:1.3rem;line-height:1}
+details[open] summary::after{content:"–"}
+details p{color:var(--suave);margin-top:10px}
+.faq{max-width:760px;margin:0 auto}
+
+footer{background:var(--azul-osc);color:#cdd2f0;padding:52px 0 24px}
+.pie{display:grid;grid-template-columns:2fr 1fr 1fr;gap:32px;margin-bottom:32px}
+.pie .logo-pie{background:#fff;display:inline-block;padding:10px 14px;border-radius:12px;margin-bottom:14px}
+.pie .logo-pie img{height:28px}
+footer h4{color:#fff;margin-bottom:12px}
+footer ul{list-style:none;display:grid;gap:8px}
+footer a:hover{color:#fff}
+.legal{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:.85rem;text-align:center}
+
+.wa-flotante{position:fixed;right:20px;bottom:20px;width:60px;height:60px;border-radius:50%;background:var(--verde-wa);display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.22);z-index:60;transition:.2s}
+.wa-flotante:hover{transform:scale(1.07)}
+
+@media (max-width:1000px){
+  .cats{grid-template-columns:repeat(3,1fr)}
+  .g4{grid-template-columns:1fr 1fr}
+}
+@media (max-width:900px){
+  .hero-grid,.pedido,.visita{grid-template-columns:1fr}
+  .foto{max-width:460px;margin:0 auto;width:100%}
+  .foto .chip{left:12px}
+  .g3{grid-template-columns:1fr 1fr}
+  .pie{grid-template-columns:1fr 1fr}
+  .pedido{padding:36px 24px}
+}
+@media (max-width:720px){
+  .menu{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;flex-direction:column;gap:0;border-bottom:1px solid var(--borde)}
+  .menu.abierto{display:flex}
+  .menu a{padding:14px 16px;border-top:1px solid var(--borde)}
+  .hamb{display:block}
+  .nav .btn{display:none}
+  .logo img{height:28px}
+  .cats{grid-template-columns:1fr 1fr}
+  .cats .cat:last-child{grid-column:1/-1}
+  .g3,.g4{grid-template-columns:1fr}
+  .pie{grid-template-columns:1fr}
+  section{padding:56px 0}
+  .hero{padding:40px 0 56px}
+  .hero-datos{gap:18px}
+}
+</style>
+</head>
+<body>
+
+<div class="aviso">🚚 Domicilios en zonas de cobertura · WhatsApp <a href="https://wa.me/573023835590" data-wa>302 383 55 90</a></div>
+
+<header>
+  <div class="contenedor nav">
+    <a href="#" class="logo" aria-label="Farmacia TOP, inicio"><img src="img/logo.png" alt="Farmacia TOP" width="256" height="36"></a>
+    <nav class="menu" id="menu">
+      <a href="#categorias">Productos</a>
+      <a href="#inyectologia">Inyectología</a>
+      <a href="#pedidos">Domicilios</a>
+      <a href="#novedades">Novedades</a>
+      <a href="#visitanos">Ubicación</a>
+    </nav>
+    <a class="btn btn-wa" href="https://wa.me/573023835590" data-wa>WhatsApp</a>
+    <button class="hamb" aria-label="Abrir menú" onclick="document.getElementById('menu').classList.toggle('abierto')">☰</button>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="contenedor hero-grid">
+    <div>
+      <div class="lema"><span>¡Estamos para servirle!</span></div><br>
+      <span class="estado" id="estado"><i></i><span>Horario: 8 a.m. todos los días</span></span>
+      <h1>Tu farmacia de confianza en <em>Belén, Medellín</em></h1>
+      <p>Medicamentos, inyectología, aseo, productos para tu bebé y cosméticos. Pide por WhatsApp y te lo llevamos a domicilio.</p>
+      <div class="acciones">
+        <a class="btn btn-wa" href="https://wa.me/573023835590" data-wa>💬 Pedir a domicilio</a>
+        <a class="btn btn-sec" href="tel:+576043221090">📞 (604) 322 10 90</a>
+      </div>
+      <div class="hero-datos">
+        <div><span class="ic">💉</span><div><strong>Inyectología</strong><small>en el punto</small></div></div>
+        <div><span class="ic">🚚</span><div><strong>Domicilios</strong><small>zonas de cobertura</small></div></div>
+        <div><span class="ic">🕗</span><div><strong>Abierto los 7 días</strong><small>desde las 8 a.m.</small></div></div>
+      </div>
+    </div>
+    <div class="foto">
+      <img src="img/fachada.jpg" alt="Fachada de Farmacia TOP en la Calle 9 #84A-08, Belén" width="900" height="1415">
+      <a class="chip" href="#visitanos"><span style="font-size:1.6rem">📍</span><div><b>Cl. 9 #84A-08</b><small>Belén, Medellín</small></div></a>
+    </div>
+  </div>
+</section>
+
+<section id="categorias" class="fondo-gris">
+  <div class="contenedor">
+    <div class="titulo">
+      <small>Productos y servicios</small>
+      <h2>Todo lo que necesitas, en un solo lugar</h2>
+      <p>Toca una categoría y pregúntanos por WhatsApp lo que buscas.</p>
+    </div>
+    <div class="cats">
+      <a class="tarjeta cat" href="#" data-wa-msg="Hola Farmacia TOP, quiero preguntar por un medicamento:"><div class="icono">💊</div><h3>Medicamentos</h3><p>Marcas confiables y genéricos, con o sin fórmula.</p><span class="pedir">Preguntar →</span></a>
+      <a class="tarjeta cat destacada" id="inyectologia" href="#" data-wa-msg="Hola Farmacia TOP, quiero información sobre el servicio de inyectología."><div class="icono">💉</div><h3>Inyectología</h3><p>Personal capacitado para aplicarte tus inyecciones en el punto.</p><span class="pedir">Más información →</span></a>
+      <a class="tarjeta cat" href="#" data-wa-msg="Hola Farmacia TOP, busco productos de aseo e higiene:"><div class="icono">🧼</div><h3>Aseo e higiene</h3><p>Cuidado personal y del hogar para toda la familia.</p><span class="pedir">Preguntar →</span></a>
+      <a class="tarjeta cat" href="#" data-wa-msg="Hola Farmacia TOP, busco productos para mi bebé:"><div class="icono">👶</div><h3>Todo para tu bebé</h3><p>Pañales, cremas, teteros y lo que tu bebé necesita.</p><span class="pedir">Preguntar →</span></a>
+      <a class="tarjeta cat" href="#" data-wa-msg="Hola Farmacia TOP, busco cosméticos:"><div class="icono">💄</div><h3>Cosméticos</h3><p>Maquillaje y cuidado de la piel.</p><span class="pedir">Preguntar →</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="porque">
+  <div class="contenedor">
+    <div class="titulo">
+      <small>¿Por qué elegirnos?</small>
+      <h2>Comprometidos con tu bienestar</h2>
+      <p>Un equipo dispuesto a brindarte el mejor servicio y asesoramiento farmacéutico, por una comunidad más saludable.</p>
+    </div>
+    <div class="grid g4">
+      <div class="tarjeta"><div class="icono">✅</div><h3>Medicamentos de calidad</h3><p>Trabajamos con las marcas más confiables y reconocidas del mercado farmacéutico.</p></div>
+      <div class="tarjeta"><div class="icono">🛡️</div><h3>Compras seguras</h3><p>Una experiencia de compra fácil, rápida y segura, para que compres con total confianza.</p></div>
+      <div class="tarjeta"><div class="icono">🩺</div><h3>Asesoría farmacéutica</h3><p>Resolvemos tus dudas sobre medicamentos, dosis y cuidados.</p></div>
+      <div class="tarjeta"><div class="icono">💲</div><h3>Precios accesibles</h3><p>Revisamos nuestros precios para que sean accesibles para todos.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="pedidos" style="padding-top:0">
+  <div class="contenedor">
+    <div class="pedido">
+      <div>
+        <h2>Pide a domicilio en 3 pasos</h2>
+        <p>Escríbenos al WhatsApp o llámanos. Envíanos tu lista o la foto de tu fórmula médica y te confirmamos disponibilidad y precio.</p>
+        <div class="acciones">
+          <a class="btn btn-blanco" href="https://wa.me/573023835590" data-wa>💬 302 383 55 90</a>
+          <a class="btn btn-blanco" href="tel:+576043221090">📞 (604) 322 10 90</a>
+        </div>
+      </div>
+      <ol class="pasos">
+        <li><b>1</b><div><strong>Envía tu pedido</strong><br>Lista de productos o foto de la fórmula.</div></li>
+        <li><b>2</b><div><strong>Te confirmamos</strong><br>Disponibilidad, total y tiempo de entrega.</div></li>
+        <li><b>3</b><div><strong>Recibe en casa</strong><br>A domicilio en zonas de cobertura, o recoge en el punto.</div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section id="novedades" class="fondo-gris">
+  <div class="contenedor">
+    <div class="titulo">
+      <small>Novedades</small>
+      <h2>Lo nuevo en Farmacia TOP</h2>
+      <p>Entérate de lo que pasa en la farmacia sin salir de casa.</p>
+    </div>
+    <!-- Para agregar una novedad, copia un bloque <div class="tarjeta">…</div> y cambia el texto -->
+    <div class="grid g3">
+      <div class="tarjeta"><span class="fecha">18/3/26 · Producto nuevo</span><h3>Bolitas de colores</h3><p>Sabrosas y deliciosas, ¡ahora en Farmacia TOP! A solo $500 c/u.</p></div>
+      <div class="tarjeta"><span class="fecha">7/3/26 · Precios</span><h3>Precios más accesibles</h3><p>Reajustamos algunos precios para que sean más accesibles para todos.</p></div>
+      <div class="tarjeta"><span class="fecha">1/2/26 · Producto nuevo</span><h3>Chao de sandía</h3><p>¡Ya llegaron a Farmacia TOP! A solo $2.000.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="visitanos">
+  <div class="contenedor">
+    <div class="titulo">
+      <small>Visítanos</small>
+      <h2>Te esperamos en Belén</h2>
+    </div>
+    <div class="visita">
+      <div class="caja">
+        <h3>🕗 Horario de atención</h3>
+        <ul class="horario-lista" id="horario"></ul>
+        <ul class="datos-lista">
+          <li><span class="icono">📍</span><div><strong>Dirección</strong><span>Cl. 9 #84A-08, Belén, Medellín, Antioquia</span></div></li>
+          <li><span class="icono">💬</span><div><strong>WhatsApp y domicilios</strong><a href="https://wa.me/573023835590" data-wa>302 383 55 90</a></div></li>
+          <li><span class="icono">📞</span><div><strong>Teléfono fijo</strong><a href="tel:+576043221090">(604) 322 10 90</a></div></li>
+          <li><span class="icono">📱</span><div><strong>Redes sociales</strong><a href="https://www.instagram.com/farmaciatop/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/FarmaciaTOP5/" target="_blank" rel="noopener">Facebook</a></div></li>
+        </ul>
+      </div>
+      <div class="mapa">
+        <iframe loading="lazy" title="Mapa de Farmacia TOP" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Farmacia+TOP,+Cl.+9+%2384a-08,+Bel%C3%A9n,+Medell%C3%ADn,+Antioquia&output=embed"></iframe>
+        <a class="btn btn-prim" target="_blank" rel="noopener"
+          href="https://www.google.com/maps/dir/?api=1&destination=Cl.+9+%2384a-08,+Bel%C3%A9n,+Medell%C3%ADn,+Antioquia">🧭 Cómo llegar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="fondo-gris">
+  <div class="contenedor faq">
+    <div class="titulo"><small>Preguntas frecuentes</small><h2>¿Tienes dudas?</h2></div>
+    <details><summary>¿Hacen domicilios?</summary><p>Sí, en zonas de cobertura. Escríbenos al WhatsApp 302 383 55 90 para confirmar si llegamos a tu dirección.</p></details>
+    <details><summary>¿Puedo enviar la foto de mi fórmula médica?</summary><p>Claro. Envíala por WhatsApp y te confirmamos disponibilidad y precio.</p></details>
+    <details><summary>¿Tienen servicio de inyectología?</summary><p>Sí, contamos con servicio de inyectología en el punto, con personal capacitado. Ven en nuestro horario de atención.</p></details>
+    <details><summary>¿Qué horario tienen?</summary><p>Lunes a viernes de 8 a.m. a 9 p.m., sábados de 8 a.m. a 8 p.m. y domingos y festivos de 8 a.m. a 7 p.m.</p></details>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="contenedor">
+    <div class="pie">
+      <div>
+        <span class="logo-pie"><img src="img/logo.png" alt="Farmacia TOP"></span>
+        <p>¡Estamos para servirle!<br>Cl. 9 #84A-08, Belén, Medellín<br>WhatsApp 302 383 55 90 · Fijo (604) 322 10 90</p>
+      </div>
+      <div><h4>Sitio</h4><ul><li><a href="#categorias">Productos</a></li><li><a href="#inyectologia">Inyectología</a></li><li><a href="#pedidos">Domicilios</a></li><li><a href="#novedades">Novedades</a></li><li><a href="#visitanos">Ubicación</a></li></ul></div>
+      <div><h4>Síguenos</h4><ul><li><a href="https://www.instagram.com/farmaciatop/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.facebook.com/FarmaciaTOP5/" target="_blank" rel="noopener">Facebook</a></li></ul></div>
+    </div>
+    <div class="legal">© <span id="anio">2026</span> Farmacia TOP · Medellín, Colombia</div>
+  </div>
+</footer>
+
+<a class="wa-flotante" href="https://wa.me/573023835590" data-wa aria-label="Escríbenos por WhatsApp">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.1-4.7-4.1-4.9-4.3-.1-.2-1.2-1.6-1.2-3s.8-2.2 1-2.5c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.6.4 0 .1 0 .7-.3 1.3z"/></svg>
+</a>
+
+<script>
+// ===== CONFIGURACIÓN =====
+const WHATSAPP = "573023835590";
+const MENSAJE = "Hola Farmacia TOP, quiero hacer un pedido a domicilio:";
+// [día, abre, cierra] en formato 24 h. Índice 0 = domingo.
+const HORARIO = [
+  ["Domingo","08:00","19:00"],
+  ["Lunes","08:00","21:00"],
+  ["Martes","08:00","21:00"],
+  ["Miércoles","08:00","21:00"],
+  ["Jueves","08:00","21:00"],
+  ["Viernes","08:00","21:00"],
+  ["Sábado","08:00","20:00"],
+];
+// =========================
+
+const wa = msg => "https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent(msg);
+document.querySelectorAll("[data-wa]").forEach(a=>{ a.href = wa(MENSAJE); a.target="_blank"; a.rel="noopener"; });
+document.querySelectorAll("[data-wa-msg]").forEach(a=>{ a.href = wa(a.dataset.waMsg); a.target="_blank"; a.rel="noopener"; });
+document.getElementById("anio").textContent = new Date().getFullYear();
+
+// Hora actual en Medellín, sin importar dónde esté el visitante
+const partes = Object.fromEntries(new Intl.DateTimeFormat("en-US",{timeZone:"America/Bogota",weekday:"short",hour:"2-digit",minute:"2-digit",hourCycle:"h23"}).formatToParts(new Date()).map(p=>[p.type,p.value]));
+const hoy = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf(partes.weekday);
+const ahora = (+partes.hour)*60 + (+partes.minute);
+const min = t => { const [h,m]=t.split(":").map(Number); return h*60+m; };
+const bonito = t => { let [h,m]=t.split(":").map(Number); const s=h>=12?"p.m.":"a.m."; h=h%12||12; return h+(m?":"+String(m).padStart(2,"0"):"")+" "+s; };
+
+const lista = document.getElementById("horario");
+[1,2,3,4,5,6,0].forEach(i=>{
+  const [d,a,c] = HORARIO[i];
+  const li = document.createElement("li");
+  if(i===hoy) li.className="hoy";
+  li.innerHTML = `<span>${d}${i===hoy?" (hoy)":""}</span><span>${a?bonito(a)+" – "+bonito(c):"Cerrado"}</span>`;
+  lista.appendChild(li);
+});
+
+const [,a,c] = HORARIO[hoy];
+const abierto = a && ahora>=min(a) && ahora<min(c);
+const est = document.getElementById("estado");
+est.classList.add(abierto?"abierto":"cerrado");
+let texto;
+if (abierto) texto = "Abierto ahora · cierra a las " + bonito(c);
+else if (a && ahora < min(a)) texto = "Cerrado · abre hoy a las " + bonito(a);
+else { const m = HORARIO[(hoy+1)%7]; texto = "Cerrado · abre mañana a las " + bonito(m[1]); }
+est.querySelector("span").textContent = texto;
+</script>
+</body>
+</html>
