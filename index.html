@@ -157,6 +157,27 @@ section{padding:80px 0}
 .reel a{display:block;text-align:center;font-weight:700;color:#1877f2;padding:10px 0 4px;font-size:.92rem}
 @media (max-width:900px){.informate{grid-template-columns:1fr;gap:32px}.reel{max-width:340px;width:100%;margin:0 auto}}
 @media (max-width:420px){.redes{grid-template-columns:1fr}}
+/* Reséñanos */
+.resenas{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center}
+.nota{background:#fff;border:1px solid var(--borde);border-radius:24px;padding:32px;box-shadow:0 20px 50px rgba(29,42,143,.08)}
+.nota h2{font-size:clamp(1.9rem,4vw,2.6rem);line-height:1.15;margin:8px 0 12px}
+.nota h2 em{font-style:normal;color:var(--rojo)}
+.nota .k{color:var(--rojo);font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.85rem}
+.nota>p{color:var(--suave);margin-bottom:20px}
+.puntaje{display:flex;align-items:center;gap:14px;background:var(--gris);border-radius:16px;padding:14px 18px;margin-bottom:20px}
+.puntaje b{font-size:2.4rem;line-height:1}
+.puntaje .est{color:#f5b400;font-size:1.3rem;letter-spacing:2px}
+.puntaje small{color:var(--suave);display:block}
+.pasos-r{list-style:none;display:grid;gap:8px;margin-bottom:22px;color:var(--suave);font-size:.95rem}
+.pasos-r b{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--rojo-claro);color:var(--rojo);font-size:.8rem;margin-right:8px}
+.btn-google{background:#fff;color:var(--texto);border:2px solid var(--borde)}.btn-google:hover{border-color:#4285f4}
+.btn-google svg{width:20px;height:20px}
+.lista-r{display:grid;gap:16px}
+.opinion{background:#fff;border:1px solid var(--borde);border-radius:var(--radio);padding:22px 24px}
+.opinion .est{color:#f5b400;letter-spacing:2px;margin-bottom:8px}
+.opinion p{margin-bottom:12px}
+.opinion small{color:var(--suave);font-weight:600}
+@media (max-width:900px){.resenas{grid-template-columns:1fr}}
 .fecha{display:inline-block;background:var(--azul-claro);color:var(--azul);font-weight:700;font-size:.8rem;padding:4px 10px;border-radius:999px;margin-bottom:12px}
 
 /* Visítanos */
@@ -372,6 +393,32 @@ footer a:hover{color:#fff}
   </div>
 </section>
 
+<section id="resenas" class="fondo-gris">
+  <div class="contenedor resenas">
+    <div class="nota">
+      <span class="k">Tu opinión nos importa</span>
+      <h2>¡<em>Reséñanos</em>!</h2>
+      <p>¿Te atendimos bien? Cuéntale a tus vecinos cómo te fue en Farmacia TOP. ¡Solo toma un minuto!</p>
+      <div class="puntaje"><b>4,8</b><div><span class="est">★★★★★</span><small>Calificación en Google</small></div></div>
+      <ol class="pasos-r">
+        <li><b>1</b>Toca el botón de abajo para abrir nuestra ficha en Google.</li>
+        <li><b>2</b>Toca <strong>“Escribir una reseña”</strong>.</li>
+        <li><b>3</b>Elige tus estrellas y cuéntanos tu experiencia.</li>
+      </ol>
+      <div class="acciones">
+        <a class="btn btn-prim" href="https://www.google.com/maps?cid=16660506873264441352" target="_blank" rel="noopener">⭐ Escribir reseña</a>
+        <a class="btn btn-google" href="https://www.google.com/maps?cid=16660506873264441352" target="_blank" rel="noopener"><svg viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.1H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 13 4 4 13 4 24s9 20 20 20 20-9 20-20c0-1.3-.1-2.6-.4-3.9z"/><path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.1H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.6-.4-3.9z"/></svg> Ver reseñas</a>
+      </div>
+    </div>
+    <div class="lista-r">
+      <!-- Reseñas reales de Google -->
+      <div class="opinion"><div class="est">★★★★★</div><p>“Muy buena farmacia, en toda la Loma los Bernal, los domicilios son gratis, te llegan en cuestión de minutos y la niña que atiende súper querida. Seguiré pidiendo las medicinas en este lugar.”</p><small>— César M., en Google</small></div>
+      <div class="opinion"><div class="est">★★★★★</div><p>“Excelente atención, siempre hay disponibilidad de sus empleados para brindar soluciones.”</p><small>— Andrés D., en Google</small></div>
+      <div class="opinion"><div class="est">★★★★★</div><p>“Buena, los mejores precios de La Loma.”</p><small>— Luis Fernando P., en Google</small></div>
+    </div>
+  </div>
+</section>
+
 <section id="visitanos">
   <div class="contenedor">
     <div class="titulo">
@@ -417,7 +464,7 @@ footer a:hover{color:#fff}
         <span class="logo-pie"><img src="img/logo.png" alt="Farmacia TOP"></span>
         <p>¡Estamos para servirle!<br>Cl. 9 #84A-08, Belén, Medellín<br>WhatsApp 302 383 55 90 · Fijo (604) 322 10 90</p>
       </div>
-      <div><h4>Sitio</h4><ul><li><a href="#categorias">Productos</a></li><li><a href="#inyectologia">Inyectología</a></li><li><a href="#pedidos">Domicilios</a></li><li><a href="#novedades">Novedades</a></li><li><a href="#informate">Infórmate</a></li><li><a href="#visitanos">Ubicación</a></li></ul></div>
+      <div><h4>Sitio</h4><ul><li><a href="#categorias">Productos</a></li><li><a href="#inyectologia">Inyectología</a></li><li><a href="#pedidos">Domicilios</a></li><li><a href="#novedades">Novedades</a></li><li><a href="#informate">Infórmate</a></li><li><a href="#resenas">Reséñanos</a></li><li><a href="#visitanos">Ubicación</a></li></ul></div>
       <div><h4>Síguenos</h4><ul><li><a href="https://www.instagram.com/farmaciatop/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.facebook.com/FarmaciaTOP5/" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://www.youtube.com/@farmaciatop5" target="_blank" rel="noopener">YouTube</a></li><li><a href="https://www.tiktok.com/@farmacia.top" target="_blank" rel="noopener">TikTok</a></li></ul></div>
     </div>
     <div class="legal">© <span id="anio">2026</span> Farmacia TOP · Medellín, Colombia</div>
